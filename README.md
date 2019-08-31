@@ -27,8 +27,7 @@ The included i3bar in the i3(-gaps) package lets alot of things to be desired. P
 My favourite terminal file browser. Configured for image previews, video previews, and a nicer layout.
 - **rofi/**
 My custom rofi theme. To be used as an application launcher or window tab switcher.
-- compton.conf
+- **compton.conf**
 Configuration for the compton compositor, often used alongside i3 for a better look and feel.
-- **List_Emoji.txt**
 A list of all emoji with their respective name. To be used with the mEmoji script in ~/exe.
 
