@@ -1,0 +1,18 @@
+1566645623433	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1566646309254	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1566646309254	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1566646309256	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1566646310255	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1566646315064	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1566646315064	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1566646315067	Sync.Service	DEBUG	User-Agent: Firefox/68.0.1 (Linux x86_64) FxSync/1.70.0.20190720144906.desktop
+1566646315067	Sync.Service	INFO	Starting sync at 2019-08-24 13:31:55 in browser session y22WtAPgLEsH
+1566646315067	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1566646315068	Sync.Status	INFO	Resetting Status.
+1566646315068	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1566646315072	Sync.Resource	WARN	GET request to https://sync-592-us-west-2.sync.services.mozilla.com/1.5/120449125/info/collections failed: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1566646315072	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1566646315072	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1566646315072	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1566646315072	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1566646315075	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available

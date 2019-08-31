@@ -1,0 +1,266 @@
+1567175377255	Sync.LogManager	DEBUG	Flushing file log
+1567175377255	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://profile.accounts.firefox.com/v1/profile
+1567175377256	Services.Common.RESTRequest	TRACE	Channel for GET https://profile.accounts.firefox.com/v1/profile returned status code 2152398878
+1567175377256	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1567175377256	Services.Common.RESTRequest	TRACE	GET body: 
+1567175377256	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 434\"  data: no]"}
+1567175377271	Sync.LogManager	DEBUG	Log cleanup threshold time: 1566311377271
+1567175377294	Sync.LogManager	DEBUG	Done deleting files.
+1567175378238	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1567175379507	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1567175380529	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1567175381677	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1567175382707	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1567175384240	Sync.Service	DEBUG	User-Agent: Firefox/68.0.1 (Linux x86_64) FxSync/1.70.0.20190720144906.desktop
+1567175384240	Sync.Service	INFO	Starting sync at 2019-08-30 16:29:44 in browser session O7xZLEje84MF
+1567175384240	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1567175384246	Sync.Status	INFO	Resetting Status.
+1567175384246	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1567175384248	Sync.BrowserIDManager	INFO	Getting keys
+1567175384248	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1567175384249	FirefoxAccounts	DEBUG	enter getAssertion()
+1567175384253	FirefoxAccounts	DEBUG	got keyPair
+1567175384253	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1567175384255	Services.Common.RESTRequest	TRACE	local time, offset: 1567175384254, -11953
+1567175384257	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/certificate/sign
+1567175384257	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1567175384257	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1567175384257	Services.Common.RESTRequest	TRACE	HTTP Header accept-language: en-US, en
+1567175384257	Services.Common.RESTRequest	DEBUG	POST Length: 888
+1567175384257	Services.Common.RESTRequest	TRACE	POST Body: {"publicKey":{"algorithm":"DS","y":"A8EB7A0F30790182DF51B3F025A173BE66573B1E4205F8DCF8FA35EC947E8DA1974458AEFF51A6006C8D8ECFDF7020F83C1DF0F8F03965DB2252D3946CFAAB7E866ECADBEAA8A8141D544BAC3A054B016EF583484D03FDCB9A661D1CD79B9FD69CCE39E82EEB3F6AD415723C133FFD0C8D1B21CD4380FD721E08D04013C9E482","p":"FF600483DB6ABFC5B45EAB78594B3533D550D9F1BF2A992A7A8DAA6DC34F8045AD4E6E0C429D334EEEAAEFD7E23D4810BE00E4CC1492CBA325BA81FF2D5A5B305A8D17EB3BF4A06A349D392E00D329744A5179380344E82A18C47933438F891E22AEEF812D69C8F75E326CB70EA000C3F776DFDBD604638C2EF717FC26D02E17","q":"E21E04F911D1ED7991008ECAAB3BF775984309C3","g":"C52A4A0FF3B7E61FDF1867CE84138369A6154F4AFA92966E3C827E25CFA6CF508B90E5DE419E1337E07A2E9E2A3CD5DEA704D175F8EBF6AF397D69E110B96AFB17C7A03259329E4829B0D03BBC7896B15B4ADE53E130858CC34D96269AA89041F409136C7242A38895C9D5BCCAD4F389AF1D7A4BD1398BD072DFFA896233397A"},"duration":21600000}
+1567175384547	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1567175384897	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://api.accounts.firefox.com/v1/certificate/sign
+1567175384901	Services.Common.RESTRequest	TRACE	Channel for POST https://api.accounts.firefox.com/v1/certificate/sign returned status code 0
+1567175384902	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/certificate/sign 200
+1567175384902	Hawk	DEBUG	(Response) /certificate/sign: code: 200 - Status text: OK
+1567175384902	Services.Common.RESTResponse	TRACE	Processing response headers.
+1567175384902	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -11902
+1567175384903	FirefoxAccounts	DEBUG	getCertificate got a new one: true
+1567175384903	FirefoxAccounts	DEBUG	_updateAccountData with items: ["keyPair","cert"]
+1567175384903	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","device","oauthTokens","profileCache"]
+1567175384904	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","device","oauthTokens","profileCache"]
+1567175384904	FirefoxAccounts	DEBUG	getAssertionFromCert
+1567175384906	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1567175384906	Sync.BrowserIDManager	DEBUG	Getting a token
+1567175384906	Services.Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1567175384906	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1567175384906	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1567175384906	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1567175384906	Services.Common.RESTRequest	TRACE	HTTP Header x-client-state: ***** (suppressed)
+1567175384907	FirefoxAccounts	TRACE	finished write of json user data - took: 3
+1567175384907	FirefoxAccounts	DEBUG	writing secure storage: ["kSync","kXCS","kExtSync","kExtKbHash"]
+1567175384907	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1567175384911	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1567175385572	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://token.services.mozilla.com/1.0/sync/1.5
+1567175385572	Services.Common.RESTRequest	TRACE	Channel for GET https://token.services.mozilla.com/1.0/sync/1.5 returned status code 0
+1567175385573	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 200
+1567175385573	Services.Common.TokenServerClient	DEBUG	Got token response: 200
+1567175385573	Services.Common.RESTResponse	TRACE	Processing response headers.
+1567175385573	Services.Common.TokenServerClient	DEBUG	Successful token response
+1567175385574	Sync.Status	DEBUG	Status.login: success.login => success.login
+1567175385574	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1567175385578	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1567175386242	Sync.Resource	DEBUG	GET success 200 https://sync-592-us-west-2.sync.services.mozilla.com/1.5/120449125/info/collections
+1567175386244	Sync.Service	DEBUG	Fetching server configuration: https://sync-592-us-west-2.sync.services.mozilla.com/1.5/120449125/info/configuration
+1567175386578	Sync.Resource	DEBUG	GET success 200 https://sync-592-us-west-2.sync.services.mozilla.com/1.5/120449125/info/configuration
+1567175386578	Sync.Service	DEBUG	Fetching global metadata record
+1567175386578	Sync.Service	DEBUG	Weave Version: 1.70.0 Local Storage: 5 Remote Storage: 5
+1567175386578	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1567175386578	Sync.Service	INFO	Testing info/collections: {"addons":1566325626.8,"clients":1566956467.22,"crypto":1557840735.16,"meta":1557840887.09,"bookmarks":1566702778.52,"prefs":1566325024.82}
+1567175386578	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1557840735.16
+1567175386579	Sync.Synchronizer	DEBUG	Refreshing client list.
+1567175386580	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1567175386580	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1567175386843	Sync.Collection	DEBUG	GET success 200 https://sync-592-us-west-2.sync.services.mozilla.com/1.5/120449125/storage/clients?full=1&limit=1000
+1567175386847	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 2 reconciled.
+1567175386848	Services.Common.RESTRequest	TRACE	local time, offset: 1567175386848, -11902
+1567175386849	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/devices
+1567175386849	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1567175386849	Services.Common.RESTRequest	TRACE	HTTP Header content-type: text/plain
+1567175386849	Services.Common.RESTRequest	TRACE	HTTP Header accept-language: en-US, en
+1567175387081	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://api.accounts.firefox.com/v1/account/devices
+1567175387083	Services.Common.RESTRequest	TRACE	Channel for GET https://api.accounts.firefox.com/v1/account/devices returned status code 0
+1567175387083	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/devices 200
+1567175387084	Hawk	DEBUG	(Response) /account/devices: code: 200 - Status text: OK
+1567175387084	Services.Common.RESTResponse	TRACE	Processing response headers.
+1567175387084	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -12084
+1567175387085	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1567175387086	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1567175387102	Sync.Synchronizer	INFO	Updating enabled engines: 2 clients.
+1567175387105	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1567175387106	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1567175387107	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1567175387111	Sync.Engine.Bookmarks	DEBUG	Checking if server sync ID OJxL0thC7lgL matches existing
+1567175387115	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1567175387119	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1567175387122	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1567175387123	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1567175387123	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Default Zoom (version=1.1.2, id=default-zoom@jamielinux.com)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon uMatrix (version=1.3.16, id=uMatrix@raymondhill.net)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Form Autofill (version=1.0, id=formautofill@mozilla.org)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Screenshots (version=39.0.0, id=screenshots@mozilla.org)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon WebCompat Reporter (version=1.1.0, id=webcompat-reporter@mozilla.org)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Monitor (version=3.0, id=fxmonitor@mozilla.org)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Default (version=1.0, id=default-theme@mozilla.org)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark (version=1.0, id=firefox-compact-dark@mozilla.org)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Light (version=1.0, id=firefox-compact-light@mozilla.org)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Amazon.com (version=1.1, id=amazondotcom@search.mozilla.org)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bing (version=1.0, id=bing@search.mozilla.org)
+1567175387125	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Google (version=1.0, id=google@search.mozilla.org)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Twitter (version=1.0, id=twitter@search.mozilla.org)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Wikipedia (en) (version=1.0, id=wikipedia@search.mozilla.org)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DuckDuckGo (version=1.0, id=ddg@search.mozilla.org)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon hotfix-update-xpi-intermediate (version=1.0.6, id=hotfix-update-xpi-intermediate@mozilla.com)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Web Compat (version=5.0.2, id=webcompat@mozilla.org)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Arc Dark Theme (version=2019.8.4, id=arc-dark-theme@afnankhan)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon AdNauseam (version=3.8.302, id=adnauseam@rednoise.org)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon LastPass: Free Password Manager (version=4.31.2.3, id=support@lastpass.com)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark theme for Firefox (version=1.0.2.0, id={1afaee19-8dde-4b0e-8c84-f46ca0f02f06})
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark Reader (version=4.7.17, id=addon@darkreader.org)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon OpenH264 Video Codec provided by Cisco Systems, Inc. (version=1.8.1, id=gmp-gmpopenh264)
+1567175387126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Shockwave Flash (version=32.0.0.223, id=Shockwave FlashShockwave Flash 32.0 r0)
+1567175387127	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1567175387135	Sync.Engine.Addons	INFO	0 outgoing items pre-reconciliation
+1567175387135	Sync.Engine.Addons	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1567175387136	Sync.Engine.Extension-Storage	DEBUG	Syncing extension settings for ["default-zoom@jamielinux.com","addon@darkreader.org"]
+1567175387138	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387138	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387138	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387138	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387138	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387138	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387138	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387138	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387138	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387138	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387138	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387144	FirefoxAccounts	DEBUG	getOAuthToken enter
+1567175387144	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1567175387144	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1567175387145	FirefoxAccounts	DEBUG	getOAuthToken enter
+1567175387145	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1567175387145	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1567175387678	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387678	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387678	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387678	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387679	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387679	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387679	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387679	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387679	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387679	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387679	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387682	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387682	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387682	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387682	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387683	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387683	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387683	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387683	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387683	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387683	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387683	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387685	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387685	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387686	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387686	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387686	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387686	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387686	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387686	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387686	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387686	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387686	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387688	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387688	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387688	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387688	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387688	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387688	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387688	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387688	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387688	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387688	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387688	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387690	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387690	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387690	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387690	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387691	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387691	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387691	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387691	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387691	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387691	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387691	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387693	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387693	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387693	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387693	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387693	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387693	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387693	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387693	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387693	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387693	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387693	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387694	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387694	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387695	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387695	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387695	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387695	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387695	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387695	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387695	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387695	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387695	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387696	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387696	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387696	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387696	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387696	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387696	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387696	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387696	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387696	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387696	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387696	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387697	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387697	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387697	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387697	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387698	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387698	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387698	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387698	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387698	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387698	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387698	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387699	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1566321459215.
+1567175387699	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1567175387699	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1567175387699	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for default-zoom@jamielinux.com
+1567175387699	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for addon@darkreader.org
+1567175387699	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1567175387699	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1567175387699	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d1be9df6-b9eb-4334-9ccb-1585fa480ddc}
+1567175387699	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1567175387699	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1567175387699	Sync.CollectionKeyManager	INFO	Bumping last modified to 1566321459215
+1567175387706	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1567175387706	Sync.Doctor	INFO	Skipping check of bookmarks - disabled via preferences
+1567175387706	Sync.Doctor	INFO	Skipping check of addons - disabled via preferences
+1567175387706	Sync.Doctor	INFO	Skipping check of extension-storage - disabled via preferences
+1567175387706	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1567175387706	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1567175387706	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1567175387707	Sync.Synchronizer	INFO	Sync completed at 2019-08-30 16:29:47 after 3.46 secs.
+1567175387707	Sync.Declined	DEBUG	Handling remote declined: ["passwords","tabs","forms","history"]
+1567175387707	Sync.Declined	DEBUG	Handling local declined: ["tabs","history","passwords","forms"]
+1567175387707	Sync.Declined	DEBUG	Declined changed? false
+1567175387707	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1567175387708	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)

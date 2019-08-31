@@ -1,0 +1,17 @@
+
+URxvt.saveLines: 1000
+URxvt.scrollBar: false
+URxvt.foreground: white
+URxvt.background: grey 
+URxvt.urlLauncher: qutebrowser
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+URxvt.font: xft:RobotoMono Nerd Font Mono:style=Regular:size=12
+URxvt.boldFont: xft:RobotoMono Nerd Font Mono:style=Bold:size=12
+URxvt.italicFont: xft:RobotoMono Nerd Font Mono:style=Italic:size=12
+URxvt.boldItalicFont: xft:RobotoMono Nerd Font Mono:style=Bold:size=12
+URxvt.transparent: true
+URxvt.shading: 24
+
+Xcursor.theme: Google_Cursor
+Xcursor.size: 29
